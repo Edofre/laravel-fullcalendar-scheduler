@@ -1,0 +1,47 @@
+{
+  "name": "edofre/laravel-fullcalendar-scheduler",
+  "description": "Laravel component for fullcalendar scheduler module",
+  "require": {
+    "php": ">=5.5.0",
+    "yiisoft/yii2": "*",
+    "yiisoft/yii2-jui": "*",
+    "bower-asset/fullcalendar": "v3.0.1",
+    "bower-asset/fullcalendar-scheduler": "v1.4.0"
+  },
+  "keywords": [
+    "fullcalendar-scheduler",
+    "scheduler",
+    "javascript",
+    "event",
+    "calendar",
+    "laravel"
+  ],
+  "homepage": "https://github.com/edofre/laravel-fullcalendar-scheduler",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Edo Freriks",
+      "email": "edofre@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "edofre\\fullcalendarscheduler\\": ""
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.1.x-dev"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php artisan vendor:publish --tag=config",
+      "php artisan vendor:publish --tag=fullcalendar"
+    ],
+    "post-update-cmd": [
+      "php artisan vendor:publish --tag=config",
+      "php artisan vendor:publish --tag=fullcalendar"
+    ]
+  }
+}
