@@ -36,11 +36,11 @@
   "scripts": {
     "post-install-cmd": [
       "php artisan vendor:publish --tag=config",
-      "php artisan vendor:publish --tag=fullcalendar"
+      "php artisan vendor:publish --tag=fullcalendar-schedulerr"
     ],
     "post-update-cmd": [
       "php artisan vendor:publish --tag=config",
-      "php artisan vendor:publish --tag=fullcalendar"
+      "php artisan vendor:publish --tag=fullcalendar-scheduler"
     ]
   }
 }

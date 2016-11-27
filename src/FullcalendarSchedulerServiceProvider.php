@@ -53,7 +53,7 @@ class FullcalendarSchedulerServiceProvider extends ServiceProvider
             __DIR__ . '/../../../bower-asset/fullcalendar/dist/gcal.js'                 => public_path('js/gcal.js'),
             // moment library
             __DIR__ . '/../../../bower-asset/moment/moment.js'                          => public_path('js/moment.js'),
-        ], 'fullcalendar');
+        ], 'fullcalendar-scheduler');
     }
 
     /**
