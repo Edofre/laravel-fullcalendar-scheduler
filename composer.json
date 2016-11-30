@@ -25,7 +25,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "edofre\\fullcalendarscheduler\\": ""
+      "Edofre\\FullcalendarScheduler\\": ""
     }
   },
   "extra": {

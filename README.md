@@ -24,7 +24,7 @@ to the ```require``` section of your `composer.json` file.
 Publish assets and configuration files
 ```
 php artisan vendor:publish --tag=config
-php artisan vendor:publish --tag=fullcalendar
+php artisan vendor:publish --tag=fullcalendar-scheduler
 ```
 
 Add the ServiceProvider to your config/app.php
