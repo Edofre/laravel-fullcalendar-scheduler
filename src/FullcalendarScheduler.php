@@ -15,6 +15,8 @@ class FullcalendarScheduler
     /** @var array */
     protected $events = [];
     /** @var array */
+    protected $resources = [];
+    /** @var array */
     protected $defaultOptions = [
         'header'   => [
             'left'   => 'prev,next today',
@@ -92,6 +94,10 @@ class FullcalendarScheduler
 
         if (!isset($options['events'])) {
             $options['events'] = $this->events;
+        }
+
+        if (!isset($options['resources'])) {
+            $options['resources'] = $this->resources;
         }
 
         $parameters = array_merge($options, $placeholders);
@@ -182,5 +188,21 @@ class FullcalendarScheduler
     public function setEvents($events)
     {
         $this->events = $events;
+    }
+
+    /**
+     * @return array
+     */
+    public function getResources()
+    {
+        return $this->resources;
+    }
+
+    /**
+     * @param mixed $resources
+     */
+    public function setResources($resources)
+    {
+        $this->resources = $resources;
     }
 }

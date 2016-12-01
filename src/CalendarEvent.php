@@ -3,10 +3,10 @@
 namespace Edofre\FullcalendarScheduler;
 
 /**
- * Class Event
+ * Class CalendarEvent
  * @package Edofre\FullcalendarScheduler
  */
-class Event
+class CalendarEvent
 {
     /** Rendering options */
     const RENDERING_BACKGROUND = 'background';
