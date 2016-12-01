@@ -50,7 +50,7 @@ class CalendarEvent
     public $textColor;
 
     /**
-     * Event constructor.
+     * CalendarEvent constructor.
      * @param $args
      */
     function __construct($args)

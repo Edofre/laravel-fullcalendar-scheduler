@@ -35,4 +35,15 @@ class CalendarResource
     public $parentId;
     /** @var  string Parent is a reference to the parent Resource Object. It will be null if there is no parent. */
     public $parent;
+
+    /**
+     * CalendarResource constructor.
+     * @param $args
+     */
+    function __construct($args)
+    {
+        foreach ($args as $key => $value) {
+            $this->$key = $value;
+        }
+    }
 }

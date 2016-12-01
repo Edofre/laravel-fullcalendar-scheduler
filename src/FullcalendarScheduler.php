@@ -21,7 +21,7 @@ class FullcalendarScheduler
         'header'   => [
             'left'   => 'prev,next today',
             'center' => 'title',
-            'right'  => 'month,agendaWeek,agendaDay',
+            'right'  => 'timelineDay,timelineWeek,timelineMonth,timelineYear',
         ],
         'firstDay' => 1,
     ];
@@ -77,7 +77,7 @@ class FullcalendarScheduler
      */
     private function script()
     {
-        return $this->view->make('fullcalendar::script', [
+        return $this->view->make('fullcalendar-scheduler::script', [
             'id'           => $this->getId(),
             'options'      => $this->getOptionsJson(),
             'include_gcal' => config('laravel-fullcalendar-scheduler.enable_gcal'),
