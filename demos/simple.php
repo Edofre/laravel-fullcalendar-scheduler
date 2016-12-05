@@ -3,8 +3,6 @@
 $calendar = new \Edofre\FullcalendarScheduler\FullcalendarScheduler($view);
 
 // Set the events and resources
-//        $calendar->setEvents(route('fullcalendar-scheduler-ajax-events'));
-//        $calendar->setResources(route('fullcalendar-scheduler-ajax-resources'));
 $calendar->setEvents([
     ['id' => '1', 'resourceId' => 'b', 'start' => '2016-05-07T02:00:00', 'end' => '2016-05-07T07:00:00', 'title' => 'event 1'],
     ['id' => '2', 'resourceId' => 'c', 'start' => '2016-05-07T05:00:00', 'end' => '2016-05-07T22:00:00', 'title' => 'event 2'],
@@ -65,8 +63,3 @@ $calendar->setOptions([
     ],
     'resourceLabelText' => 'Rooms',
 ]);
-
-return view('fullcalendar-scheduler.index', [
-    'calendar' => $calendar,
-]);
-?>
