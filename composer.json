@@ -25,7 +25,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Edofre\\FullcalendarScheduler\\": ""
+      "Edofre\\FullcalendarScheduler\\": "src"
     }
   },
   "extra": {
@@ -36,7 +36,7 @@
   "scripts": {
     "post-install-cmd": [
       "php artisan vendor:publish --tag=config",
-      "php artisan vendor:publish --tag=fullcalendar-schedulerr"
+      "php artisan vendor:publish --tag=fullcalendar-scheduler"
     ],
     "post-update-cmd": [
       "php artisan vendor:publish --tag=config",
