@@ -55,9 +55,8 @@ public function index(\Illuminate\View\Factory $view)
     // Generate a new fullcalendar instance
     $calendar = new \Edofre\FullcalendarScheduler\FullcalendarScheduler($view);
 
-    // Set the events and resources
-    //        $calendar->setEvents(route('fullcalendar-scheduler-ajax-events'));
-    //        $calendar->setResources(route('fullcalendar-scheduler-ajax-resources'));
+    // Set events and resources, commented lines shows how to add them via ajax
+    // $calendar->setEvents(route('fullcalendar-scheduler-ajax-events'));
     $calendar->setEvents([
         ['id' => '1', 'resourceId' => 'b', 'start' => '2016-05-07T02:00:00', 'end' => '2016-05-07T07:00:00', 'title' => 'event 1'],
         ['id' => '2', 'resourceId' => 'c', 'start' => '2016-05-07T05:00:00', 'end' => '2016-05-07T22:00:00', 'title' => 'event 2'],
@@ -65,6 +64,8 @@ public function index(\Illuminate\View\Factory $view)
         ['id' => '4', 'resourceId' => 'e', 'start' => '2016-05-07T03:00:00', 'end' => '2016-05-07T08:00:00', 'title' => 'event 4'],
         ['id' => '5', 'resourceId' => 'f', 'start' => '2016-05-07T00:30:00', 'end' => '2016-05-07T02:30:00', 'title' => 'event 5'],
     ]);
+    
+    // $calendar->setResources(route('fullcalendar-scheduler-ajax-resources'));
     $calendar->setResources([
         ['id' => 'a', 'title' => 'Auditorium A'],
         ['id' => 'b', 'title' => 'Auditorium B', 'eventColor' => 'green'],
