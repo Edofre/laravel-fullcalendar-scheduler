@@ -18,28 +18,6 @@ $calendar->setResources([
     ['id' => 'd', 'title' => 'Room D', 'eventColor' => 'red'],
 ]);
 
-$calendar->setCallbacks([
-    'select'   => "
-			function(start, end, jsEvent, view, resource) {
-				console.log(
-					'select',
-					start.format(),
-					end.format(),
-					resource ? resource.id : '(no resource)'
-				);
-			}
-		",
-    'dayClick' => "
-			function(date, jsEvent, view, resource) {
-				console.log(
-					'dayClick',
-					date.format(),
-					resource ? resource.id : '(no resource)'
-				);
-			}
-		",
-]);
-
 // Set options
 $calendar->setOptions([
     'header'      => [
@@ -65,4 +43,24 @@ $calendar->setOptions([
     ],
     // uncomment this line to hide the all-day slot
     //'allDaySlot'=>false,
+    // Add the callbacks
+    'select'      => new Edofre\FullcalendarScheduler\JsExpression("
+            function(start, end, jsEvent, view, resource) {
+                console.log(
+                    'select',
+                    start.format(),
+                    end.format(),
+                    resource ? resource.id : '(no resource)'
+                );
+            }
+        "),
+    'dayClick'    => new Edofre\FullcalendarScheduler\JsExpression("
+            function(date, jsEvent, view, resource) {
+                console.log(
+                    'dayClick',
+                    date.format(),
+                    resource ? resource.id : '(no resource)'
+                );
+            }
+        "),
 ]);

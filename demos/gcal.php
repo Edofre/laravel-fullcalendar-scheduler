@@ -17,16 +17,6 @@ $calendar->setResources([
     */
 ]);
 
-$calendar->setCallbacks([
-    'dayClick' => "
-            function (event) {
-                // opens events in a popup window
-                window.open(event.url, 'gcalevent', 'width=700,height=600');
-                return false;
-            }
-        ",
-]);
-
 // Set options
 $calendar->setOptions([
     'now'                  => '2016-05-07',
@@ -44,4 +34,13 @@ $calendar->setOptions([
     // To make your own Google API key, follow the directions here:
     // http://fullcalendar.io/docs/google_calendar/
     'googleCalendarApiKey' => 'AIzaSyDcnW6WejpTOCffshGDDb4neIrXVUA1EAE',
+
+    // Add the callbacks
+    'dayClick'             => new Edofre\FullcalendarScheduler\JsExpression("
+            function (event) {
+                // opens events in a popup window
+                window.open(event.url, 'gcalevent', 'width=700,height=600');
+                return false;
+            }
+        "),
 ]);

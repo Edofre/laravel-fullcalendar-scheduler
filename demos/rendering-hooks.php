@@ -40,22 +40,6 @@ $calendar->setResources([
     ['id' => 'z'],
 ]);
 
-$calendar->setCallbacks([
-    'resourceText'   => "
-        function(resource) {
-            return 'Auditorium ' + ('' + resource.id).toUpperCase();
-        }
-    ",
-    'resourceRender' => "
-        function(resource, leftCells, rightCells) {
-            if (resource.id == 'h') {
-                leftCells.css('background-color', 'rgb(255, 243, 206)');
-                rightCells.css('background-color', 'rgba(255, 243, 206, .5)');
-            }
-        }
-    ",
-]);
-
 // Set options
 $calendar->setOptions([
     'header'            => [
@@ -75,4 +59,18 @@ $calendar->setOptions([
         ],
     ],
     'resourceLabelText' => 'Rooms',
+    // Add the callbacks
+    'resourceText'      => new Edofre\FullcalendarScheduler\JsExpression("
+        function(resource) {
+            return 'Auditorium ' + ('' + resource.id).toUpperCase();
+        }
+    "),
+    'resourceRender'    => new Edofre\FullcalendarScheduler\JsExpression("
+        function(resource, leftCells, rightCells) {
+            if (resource.id == 'h') {
+                leftCells.css('background-color', 'rgb(255, 243, 206)');
+                rightCells.css('background-color', 'rgba(255, 243, 206, .5)');
+            }
+        }
+    "),
 ]);

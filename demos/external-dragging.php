@@ -47,29 +47,6 @@ $calendar->setResources([
     ['id' => 'z', 'title' => 'Auditorium Z'],
 ]);
 
-$calendar->setCallbacks([
-    'drop'         => "
-            function(date, jsEvent, ui, resourceId) {
-                console.log('drop', date.format(), resourceId);
-                // is the \"remove after drop\" checkbox checked?
-                if ($('#drop-remove').is(':checked')) {
-                    // if so, remove the element from the \"Draggable Events\" list
-                    $(this).remove();
-                }
-            }
-        ",
-    'eventReceive' => "
-            function(event) { // called when a proper external event is dropped
-                console.log('eventReceive', event);
-            }
-        ",
-    'eventDrop'    => "
-            function(event) { // called when an event (already on the calendar) is moved
-                console.log('eventDrop', event);
-            }
-        ",
-]);
-
 // Set options
 $calendar->setOptions([
     'now'               => '2016-05-07',
@@ -90,6 +67,27 @@ $calendar->setOptions([
         ],
     ],
     'resourceLabelText' => 'Rooms',
+    // Add the callbacks
+    'drop'              => new Edofre\FullcalendarScheduler\JsExpression("
+            function(date, jsEvent, ui, resourceId) {
+                console.log('drop', date.format(), resourceId);
+                // is the \"remove after drop\" checkbox checked?
+                if ($('#drop-remove').is(':checked')) {
+                    // if so, remove the element from the \"Draggable Events\" list
+                    $(this).remove();
+                }
+            }
+        "),
+    'eventReceive'      => new Edofre\FullcalendarScheduler\JsExpression("
+            function(event) { // called when a proper external event is dropped
+                console.log('eventReceive', event);
+            }
+        "),
+    'eventDrop'         => new Edofre\FullcalendarScheduler\JsExpression("
+            function(event) { // called when an event (already on the calendar) is moved
+                console.log('eventDrop', event);
+            }
+        "),
 ]);
 ?>
 

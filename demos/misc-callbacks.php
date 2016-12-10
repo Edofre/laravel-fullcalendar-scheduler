@@ -48,16 +48,6 @@ $calendar->setResources([
     ['id' => 'z', 'title' => 'Auditorium Z'],
 ]);
 
-// Set callbacks
-$calendar->setCallbacks([
-    // the point if this demo is to demonstrate dayClick...
-    'dayClick' => "
-        function(date, jsEvent, view, resourceObj) {
-            console.log('dayClick', date.format(), resourceObj);
-        }
-    ",
-]);
-
 // Set options
 $calendar->setOptions([
     'header'            => [
@@ -77,4 +67,11 @@ $calendar->setOptions([
         ],
     ],
     'resourceLabelText' => 'Rooms',
+    // Add the callbacks
+    // the point if this demo is to demonstrate dayClick...
+    'dayClick' => new Edofre\FullcalendarScheduler\JsExpression("
+        function(date, jsEvent, view, resourceObj) {
+            console.log('dayClick', date.format(), resourceObj);
+        }
+    "),
 ]);
