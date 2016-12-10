@@ -118,20 +118,16 @@ public function index(\Illuminate\View\Factory $view)
             ],
         ],
         'resourceLabelText' => 'Rooms',
-    ]);
-
-    // Set callbacks
-    $calendar->setCallbacks([
-        'eventClick' => "
-            function(event, jsEvent, view) {
-                console.log(event);
-            }
-        ",
-        'viewRender' => "
-            function( view, element ) {
-                console.log(\"View \"+view.name+\" rendered\");
-            }
-        ",
+        'eventClick' => new Edofre\FullcalendarScheduler\JsExpression("
+                    function(event, jsEvent, view) {
+                        console.log(event);
+                    }
+                "),
+                'viewRender' => new Edofre\FullcalendarScheduler\JsExpression("
+                    function( view, element ) {
+                        console.log(\"View \"+view.name+\" rendered\");
+                    }
+                "),
     ]);
 
     return view('fullcalendar-scheduler.index', [

@@ -1,6 +1,14 @@
 Change Log: `laravel-fullcalendar-scheduler`
 ============================================
 
+## Version 1.0.4
+
+**DATE:** 10-Dec-2016
+
+- Added JSON formatter to format callbacks & js functions
+- Removed callbacks attribute from fullcalendar
+ - Callbacks should be added with options now, example in README.md
+
 ## Version 1.0.3
 
 **DATE:** 10-Dec-2016
