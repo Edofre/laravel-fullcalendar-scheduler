@@ -16,7 +16,8 @@ $calendar->setResources([
     ['id' => 'b', 'title' => 'Auditorium B', 'eventColor' => 'green'],
     ['id' => 'c', 'title' => 'Auditorium C', 'eventColor' => 'orange'],
     [
-        'id'       => 'd', 'title' => 'Auditorium D',
+        'id'       => 'd',
+        'title'    => 'Auditorium D',
         'children' => [
             ['id' => 'd1', 'title' => 'Room D1'],
             ['id' => 'd2', 'title' => 'Room D2'],
@@ -92,7 +93,7 @@ $calendar->setOptions([
 ]);
 ?>
 
-<script>
+<script type="text/javascript">
     $(document).ready(function () {
         /* initialize the external events
          -----------------------------------------------------------------*/
