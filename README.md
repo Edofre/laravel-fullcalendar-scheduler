@@ -1,5 +1,6 @@
 # WIP
 # Laravel fullcalendar scheduler component
+# WIP
 
 ## Installation
 
@@ -69,7 +70,8 @@ public function index(\Illuminate\View\Factory $view)
     $calendar->setResources([
         ['id' => 'a', 'title' => 'Auditorium A'],
         ['id' => 'b', 'title' => 'Auditorium B', 'eventColor' => 'green'],
-        ['id' => 'c', 'title' => 'Auditorium C', 'eventColor' => 'orange'],
+
+['id' => 'c', 'title' => 'Auditorium C', 'eventColor' => 'orange'],
         [
             'id'       => 'd',
             'title'    => 'Auditorium D',
