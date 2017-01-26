@@ -4,9 +4,7 @@ namespace Edofre\FullcalendarScheduler;
 
 /**
  * Class CalendarResource
- *
  * Name should not be resource because php7 will not allow it
- *
  * @package Edofre\FullcalendarScheduler
  */
 class CalendarResource
@@ -35,6 +33,20 @@ class CalendarResource
     public $parentId;
     /** @var  string Parent is a reference to the parent Resource Object. It will be null if there is no parent. */
     public $parent;
+
+    /** @var  array Validation rules */
+    public $rules = [
+        'id'                   => '',
+        'title'                => 'required',
+        'eventColor'           => '',
+        'eventBackgroundColor' => '',
+        'eventBorderColor'     => '',
+        'eventTextColor'       => '',
+        'eventClassName'       => '',
+        'children'             => '',
+        'parentId'             => '',
+        'parent'               => '',
+    ];
 
     /**
      * CalendarResource constructor.
