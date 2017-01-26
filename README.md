@@ -1,6 +1,5 @@
 # WIP
 # Laravel fullcalendar scheduler component
-# WIP
 
 ## Installation
 
@@ -15,7 +14,7 @@ $ php composer.phar require edofre/laravel-fullcalendar-scheduler
 or add
 
 ```
-"edofre/laravel-fullcalendar-scheduler": "*"
+"edofre/laravel-fullcalendar-scheduler": "v1.0.0"
 ```
 
 to the ```require``` section of your `composer.json` file.
