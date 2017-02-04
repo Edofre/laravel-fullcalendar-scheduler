@@ -1,6 +1,12 @@
 # WIP
 # Laravel fullcalendar scheduler component
 
+[![Latest Stable Version](https://poser.pugx.org/edofre/laravel-fullcalendar-scheduler/v/stable)](https://packagist.org/packages/edofre/laravel-fullcalendar-scheduler)
+[![Total Downloads](https://poser.pugx.org/edofre/laravel-fullcalendar-scheduler/downloads)](https://packagist.org/packages/edofre/laravel-fullcalendar-scheduler)
+[![Latest Unstable Version](https://poser.pugx.org/edofre/laravel-fullcalendar-scheduler/v/unstable)](https://packagist.org/packages/edofre/laravel-fullcalendar-scheduler)
+[![License](https://poser.pugx.org/edofre/laravel-fullcalendar-scheduler/license)](https://packagist.org/packages/edofre/laravel-fullcalendar-scheduler)
+[![composer.lock](https://poser.pugx.org/edofre/laravel-fullcalendar-scheduler/composerlock)](https://packagist.org/packages/edofre/laravel-fullcalendar-scheduler)
+
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
