@@ -1,4 +1,3 @@
-# WIP
 # Laravel fullcalendar scheduler component
 
 [![Latest Stable Version](https://poser.pugx.org/edofre/laravel-fullcalendar-scheduler/v/stable)](https://packagist.org/packages/edofre/laravel-fullcalendar-scheduler)
@@ -20,7 +19,7 @@ $ php composer.phar require edofre/laravel-fullcalendar-scheduler
 or add
 
 ```
-"edofre/laravel-fullcalendar-scheduler": "v1.0.0"
+"edofre/laravel-fullcalendar-scheduler": "v1.0.1"
 ```
 
 to the ```require``` section of your `composer.json` file.
