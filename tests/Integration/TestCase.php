@@ -34,7 +34,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageAliases($app)
     {
         return [
-            'Fullcalendar' => \Edofre\FullcalendarScheduler\Facades\FullcalendarScheduler::class,
+            'FullcalendarScheduler' => \Edofre\FullcalendarScheduler\Facades\FullcalendarScheduler::class,
         ];
     }
 }
