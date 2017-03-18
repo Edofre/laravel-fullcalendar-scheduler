@@ -2,8 +2,6 @@
 
 namespace Edofre\FullcalendarScheduler;
 
-use Illuminate\View\Factory;
-
 /**
  * Class FullcalendarScheduler
  * @package Edofre\FullcalendarScheduler
