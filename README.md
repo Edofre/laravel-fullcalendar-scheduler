@@ -19,7 +19,7 @@ $ php composer.phar require edofre/laravel-fullcalendar-scheduler
 or add
 
 ```
-"edofre/laravel-fullcalendar-scheduler": "v1.0.2"
+"edofre/laravel-fullcalendar-scheduler": "v1.0.3"
 ```
 
 to the ```require``` section of your `composer.json` file.
@@ -67,10 +67,10 @@ Use the following as your controller action
 /**
  * @return \Illuminate\Http\Response
  */
-public function index(\Illuminate\View\Factory $view)
+public function index()
 {
     // Generate a new fullcalendar instance
-    $calendar = new \Edofre\FullcalendarScheduler\FullcalendarScheduler($view);
+    $calendar = new \Edofre\FullcalendarScheduler\FullcalendarScheduler();
 
     // Set events and resources, commented lines shows how to add them via ajax
     // $calendar->setEvents(route('fullcalendar-scheduler-ajax-events'));
