@@ -7,6 +7,10 @@
     "bower-asset/fullcalendar": "v3.0.1",
     "bower-asset/fullcalendar-scheduler": "v1.4.0"
   },
+  "require-dev": {
+    "orchestra/testbench": "~3.2.0|~3.3.0",
+    "phpunit/phpunit": "^5.0"
+  },
   "keywords": [
     "fullcalendar-scheduler",
     "scheduler",
