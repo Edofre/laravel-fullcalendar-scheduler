@@ -32,6 +32,11 @@
       "Edofre\\FullcalendarScheduler\\": "src"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Edofre\\FullcalendarScheduler\\Test\\": "tests"
+    }
+  },
   "extra": {
     "branch-alias": {
       "dev-master": "1.0.x-dev"
@@ -45,6 +50,7 @@
     "post-update-cmd": [
       "php artisan vendor:publish --tag=config",
       "php artisan vendor:publish --tag=fullcalendar-scheduler"
-    ]
+    ],
+    "test": "phpunit"
   }
 }
