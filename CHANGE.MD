@@ -6,6 +6,7 @@ Change Log: `laravel-fullcalendar-scheduler`
 **Date:** 18-Mar-2017
 
 - Refactor the FullcalendarScheduler so we don't need to pass trough the view anymore
+- Added tests!
 
 ## Version 1.0.2
 
