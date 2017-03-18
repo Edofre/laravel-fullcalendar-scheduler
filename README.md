@@ -158,3 +158,10 @@ And then add the following to your view
 ```php
 {!! $calendar->generate() !!}
 ```
+
+## Tests
+
+Run the tests by executing the following command:
+```
+composer test
+```
