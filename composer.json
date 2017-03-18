@@ -7,6 +7,10 @@
     "bower-asset/fullcalendar": "v3.0.1",
     "bower-asset/fullcalendar-scheduler": "v1.4.0"
   },
+  "require-dev": {
+    "orchestra/testbench": "~3.2.0|~3.3.0",
+    "phpunit/phpunit": "^5.0"
+  },
   "keywords": [
     "fullcalendar-scheduler",
     "scheduler",
@@ -28,6 +32,11 @@
       "Edofre\\FullcalendarScheduler\\": "src"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "Edofre\\FullcalendarScheduler\\Test\\": "tests"
+    }
+  },
   "extra": {
     "branch-alias": {
       "dev-master": "1.0.x-dev"
@@ -41,6 +50,7 @@
     "post-update-cmd": [
       "php artisan vendor:publish --tag=config",
       "php artisan vendor:publish --tag=fullcalendar-scheduler"
-    ]
+    ],
+    "test": "phpunit"
   }
 }
