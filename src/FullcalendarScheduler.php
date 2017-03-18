@@ -29,14 +29,6 @@ class FullcalendarScheduler
     protected $clientOptions = [];
 
     /**
-     * @param Factory $view
-     */
-    public function __construct(Factory $view)
-    {
-        $this->view = $view;
-    }
-
-    /**
      * @return string
      */
     public function generate()
@@ -75,7 +67,7 @@ class FullcalendarScheduler
      */
     private function script()
     {
-        return $this->view->make('fullcalendar-scheduler::script', [
+        return view('fullcalendar-scheduler::script', [
             'id'           => $this->getId(),
             'options'      => $this->getOptionsJson(),
             'include_gcal' => config('laravel-fullcalendar-scheduler.enable_gcal'),
