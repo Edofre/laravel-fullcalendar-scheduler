@@ -5,6 +5,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/edofre/laravel-fullcalendar-scheduler/v/unstable)](https://packagist.org/packages/edofre/laravel-fullcalendar-scheduler)
 [![License](https://poser.pugx.org/edofre/laravel-fullcalendar-scheduler/license)](https://packagist.org/packages/edofre/laravel-fullcalendar-scheduler)
 [![composer.lock](https://poser.pugx.org/edofre/laravel-fullcalendar-scheduler/composerlock)](https://packagist.org/packages/edofre/laravel-fullcalendar-scheduler)
+[![Build Status](https://travis-ci.org/Edofre/laravel-fullcalendar-scheduler.svg?branch=master)](https://travis-ci.org/Edofre/laravel-fullcalendar-scheduler)
 
 ## Installation
 
@@ -19,7 +20,7 @@ $ php composer.phar require edofre/laravel-fullcalendar-scheduler
 or add
 
 ```
-"edofre/laravel-fullcalendar-scheduler": "v1.0.4"
+"edofre/laravel-fullcalendar-scheduler": "v1.1.0"
 ```
 
 to the ```require``` section of your `composer.json` file.
