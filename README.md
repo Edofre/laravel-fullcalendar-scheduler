@@ -5,6 +5,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/edofre/laravel-fullcalendar-scheduler/v/unstable)](https://packagist.org/packages/edofre/laravel-fullcalendar-scheduler)
 [![License](https://poser.pugx.org/edofre/laravel-fullcalendar-scheduler/license)](https://packagist.org/packages/edofre/laravel-fullcalendar-scheduler)
 [![composer.lock](https://poser.pugx.org/edofre/laravel-fullcalendar-scheduler/composerlock)](https://packagist.org/packages/edofre/laravel-fullcalendar-scheduler)
+[![Build Status](https://travis-ci.org/Edofre/laravel-fullcalendar-scheduler.svg?branch=master)](https://travis-ci.org/Edofre/laravel-fullcalendar-scheduler)
 
 ## Installation
 
@@ -19,7 +20,7 @@ $ php composer.phar require edofre/laravel-fullcalendar-scheduler
 or add
 
 ```
-"edofre/laravel-fullcalendar-scheduler": "v1.0.5"
+"edofre/laravel-fullcalendar-scheduler": "v1.1.0"
 ```
 
 to the ```require``` section of your `composer.json` file.
@@ -30,7 +31,7 @@ This plugin enables you to download bower packages through composer.
 
 You can install it using this command:
 ```
-composer global require "fxp/composer-asset-plugin:^1.2.0”
+composer global require "fxp/composer-asset-plugin:^1.3.0”
 ```
 
 This will add the fxp composer-asset-plugin and your composer will be able to find and download the required bower-asset/fullcalendar-scheduler package.
