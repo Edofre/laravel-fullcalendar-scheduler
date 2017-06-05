@@ -7,6 +7,12 @@ Change Log: `laravel-fullcalendar-scheduler`
 
 - Include travis automated testing
 
+## Version 1.0.5
+
+**Date:** 13-May-2017
+
+- Remove laravel from config file name
+
 ## Version 1.0.4
 
 **Date:** 20-Apr-2017

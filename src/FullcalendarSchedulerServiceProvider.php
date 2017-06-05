@@ -15,7 +15,6 @@ class FullcalendarSchedulerServiceProvider extends ServiceProvider
 
     /**
      * Register bindings in the container.
-     *
      * @return void
      */
     public function register()
@@ -36,7 +35,7 @@ class FullcalendarSchedulerServiceProvider extends ServiceProvider
 
         // publish the config file
         $this->publishes([
-            __DIR__ . '/config/laravel-fullcalendar-scheduler.php' => config_path('laravel-fullcalendar-scheduler.php'),
+            __DIR__ . '/config/fullcalendar-scheduler.php' => config_path('fullcalendar-scheduler.php'),
         ], 'config');
 
         // publish all the required files to generate the calendar

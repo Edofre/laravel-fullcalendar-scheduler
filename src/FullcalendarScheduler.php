@@ -68,7 +68,7 @@ class FullcalendarScheduler
         return view('fullcalendar-scheduler::script', [
             'id'           => $this->getId(),
             'options'      => $this->getOptionsJson(),
-            'include_gcal' => config('laravel-fullcalendar-scheduler.enable_gcal'),
+            'include_gcal' => config('fullcalendar-scheduler.enable_gcal'),
         ]);
     }
 
