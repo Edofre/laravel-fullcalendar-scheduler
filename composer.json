@@ -1,16 +1,6 @@
 {
   "name": "edofre/laravel-fullcalendar-scheduler",
   "description": "Laravel component for fullcalendar scheduler module",
-  "require": {
-    "php": ">=5.6.4",
-    "laravel/framework": "5.*",
-    "bower-asset/fullcalendar": "v3.0.1",
-    "bower-asset/fullcalendar-scheduler": "v1.4.0"
-  },
-  "require-dev": {
-    "orchestra/testbench": "~3.2.0|~3.3.0",
-    "phpunit/phpunit": "^5.0"
-  },
   "keywords": [
     "fullcalendar-scheduler",
     "scheduler",
@@ -27,6 +17,16 @@
       "email": "edofre@gmail.com"
     }
   ],
+  "require": {
+    "php": ">=5.6.4",
+    "laravel/framework": "5.*",
+    "bower-asset/fullcalendar": "v3.0.1",
+    "bower-asset/fullcalendar-scheduler": "v1.4.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.2.0|~3.3.0",
+    "phpunit/phpunit": "^5.0"
+  },
   "autoload": {
     "psr-4": {
       "Edofre\\FullcalendarScheduler\\": "src"
@@ -37,20 +37,7 @@
       "Edofre\\FullcalendarScheduler\\Test\\": "tests"
     }
   },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.0.x-dev"
-    }
-  },
   "scripts": {
-    "post-install-cmd": [
-      "php artisan vendor:publish --tag=config",
-      "php artisan vendor:publish --tag=fullcalendar-scheduler"
-    ],
-    "post-update-cmd": [
-      "php artisan vendor:publish --tag=config",
-      "php artisan vendor:publish --tag=fullcalendar-scheduler"
-    ],
     "test": "phpunit"
   }
 }
