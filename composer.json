@@ -20,7 +20,6 @@
   "require": {
     "php": ">=5.6.4",
     "laravel/framework": "5.*",
-    "bower-asset/moment": "^2.18.1",
     "bower-asset/fullcalendar": "v3.4.0",
     "bower-asset/fullcalendar-scheduler": "v1.6.2"
   },
