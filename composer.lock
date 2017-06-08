@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "20fb4bb0cfb28f8b49f80374d4d73e7f",
+    "content-hash": "e934be1dbc65f431e376b1875fe0c375",
     "packages": [
         {
             "name": "bower-asset/fullcalendar",
-            "version": "v3.0.1",
+            "version": "v3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fullcalendar/fullcalendar.git",
-                "reference": "8aa93919d8227140f98bba543cd97ee9975426f7"
+                "reference": "447ab267528a211b253058dfb5d898b7a2296492"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fullcalendar/fullcalendar/zipball/8aa93919d8227140f98bba543cd97ee9975426f7",
-                "reference": "8aa93919d8227140f98bba543cd97ee9975426f7",
+                "url": "https://api.github.com/repos/fullcalendar/fullcalendar/zipball/447ab267528a211b253058dfb5d898b7a2296492",
+                "reference": "447ab267528a211b253058dfb5d898b7a2296492",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/jquery": ">=2.0.0",
-                "bower-asset/moment": ">=2.9.0"
+                "bower-asset/jquery": ">=2,<4.0",
+                "bower-asset/moment": ">=2.9.0,<3.0.0"
             },
             "type": "bower-asset-library",
             "extra": {
@@ -53,28 +53,22 @@
         },
         {
             "name": "bower-asset/fullcalendar-scheduler",
-            "version": "v1.4.0",
+            "version": "v1.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fullcalendar/fullcalendar-scheduler.git",
-                "reference": "9d6b84d46220602acf0029be7fdf1936994289b8"
+                "reference": "306087ae2fc446d062c9006ed3ec65712a42256a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fullcalendar/fullcalendar-scheduler/zipball/9d6b84d46220602acf0029be7fdf1936994289b8",
-                "reference": "9d6b84d46220602acf0029be7fdf1936994289b8",
+                "url": "https://api.github.com/repos/fullcalendar/fullcalendar-scheduler/zipball/306087ae2fc446d062c9006ed3ec65712a42256a",
+                "reference": "306087ae2fc446d062c9006ed3ec65712a42256a",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/fullcalendar": ">=3.0.0",
-                "bower-asset/jquery": ">=2.0.0",
-                "bower-asset/moment": ">=2.9.0"
-            },
-            "require-dev": {
-                "bower-asset/jasmine-fixture": "~2.0.0",
-                "bower-asset/jasmine-jquery": "~2.1.1",
-                "bower-asset/jquery-simulate": "~1.0.1",
-                "bower-asset/jquery-ui": ">=1.11.1"
+                "bower-asset/fullcalendar": "~3.4.0",
+                "bower-asset/jquery": ">=2,<4.0",
+                "bower-asset/moment": ">=2.9.0,<3.0.0"
             },
             "type": "bower-asset-library",
             "extra": {
@@ -86,9 +80,10 @@
                     "*",
                     "**/.*",
                     "!/dist/**",
-                    "!/CHANGELOG.*",
+                    "!/README.*",
                     "!/LICENSE.*",
-                    "!/README.*"
+                    "!/CHANGELOG.*",
+                    "!/CONTRIBUTING.*"
                 ]
             },
             "license": [
@@ -1329,7 +1324,7 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.3.1",
+            "version": "v3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -3528,7 +3523,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.3.1",
+            "version": "v3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
