@@ -6,6 +6,7 @@ Change Log: `laravel-fullcalendar-scheduler`
 **Date:** 5-Jun-2017
 
 - Include travis automated testing
+- Use npm instead of bower
 
 ## Version 1.0.5
 

@@ -41,16 +41,16 @@ class FullcalendarSchedulerServiceProvider extends ServiceProvider
         // publish all the required files to generate the calendar
         $this->publishes([
             // scheduler library
-            __DIR__ . '/../../../bower-asset/fullcalendar-scheduler/dist/scheduler.css' => public_path('css/scheduler.css'),
-            __DIR__ . '/../../../bower-asset/fullcalendar-scheduler/dist/scheduler.js'  => public_path('js/scheduler.js'),
+            __DIR__ . '/../../../npm-asset/fullcalendar-scheduler/dist/scheduler.css' => public_path('css/scheduler.css'),
+            __DIR__ . '/../../../npm-asset/fullcalendar-scheduler/dist/scheduler.js'  => public_path('js/scheduler.js'),
             // fullcalendar library
-            __DIR__ . '/../../../bower-asset/fullcalendar/dist/fullcalendar.css'        => public_path('css/fullcalendar.css'),
-            __DIR__ . '/../../../bower-asset/fullcalendar/dist/fullcalendar.print.css'  => public_path('css/fullcalendar.print.css'),
-            __DIR__ . '/../../../bower-asset/fullcalendar/dist/fullcalendar.js'         => public_path('js/fullcalendar.js'),
-            __DIR__ . '/../../../bower-asset/fullcalendar/dist/locale-all.js'           => public_path('js/locale-all.js'),
-            __DIR__ . '/../../../bower-asset/fullcalendar/dist/gcal.js'                 => public_path('js/gcal.js'),
+            __DIR__ . '/../../../npm-asset/fullcalendar/dist/fullcalendar.css'        => public_path('css/fullcalendar.css'),
+            __DIR__ . '/../../../npm-asset/fullcalendar/dist/fullcalendar.print.css'  => public_path('css/fullcalendar.print.css'),
+            __DIR__ . '/../../../npm-asset/fullcalendar/dist/fullcalendar.js'         => public_path('js/fullcalendar.js'),
+            __DIR__ . '/../../../npm-asset/fullcalendar/dist/locale-all.js'           => public_path('js/locale-all.js'),
+            __DIR__ . '/../../../npm-asset/fullcalendar/dist/gcal.js'                 => public_path('js/gcal.js'),
             // moment library
-            __DIR__ . '/../../../bower-asset/moment/moment.js'                          => public_path('js/moment.js'),
+            __DIR__ . '/../../../npm-asset/moment/moment.js'                          => public_path('js/moment.js'),
         ], 'fullcalendar-scheduler');
     }
 
