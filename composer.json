@@ -39,5 +39,15 @@
   },
   "scripts": {
     "test": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EdoFre\\FullcalendarScheduler\\FullcalendarSchedulerServiceProvider"
+      ],
+      "aliases": {
+        "FullcalendarScheduler": "EdoFre\\FullcalendarScheduler\\Facades\\FullcalendarScheduler"
+      }
+    }
   }
 }
