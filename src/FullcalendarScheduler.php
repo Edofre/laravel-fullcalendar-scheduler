@@ -79,8 +79,8 @@ class FullcalendarScheduler
         return view('fullcalendar-scheduler::script', [
             'id'              => $this->getId(),
             'options'         => $this->getOptionsJson(),
-            'include_scripts' => config('fullcalendar-scheduler.include_scripts'),
-            'include_gcal'    => config('fullcalendar-scheduler.enable_gcal'),
+            'include_scripts' => config('fullcalendar-scheduler.include_scripts', true),
+            'include_gcal'    => config('fullcalendar-scheduler.enable_gcal', false),
         ]);
     }
 
