@@ -20,7 +20,7 @@ $ php composer.phar require edofre/laravel-fullcalendar-scheduler
 or add
 
 ```
-"edofre/laravel-fullcalendar-scheduler": "v1.1.1"
+"edofre/laravel-fullcalendar-scheduler": "v1.2.0"
 ```
 
 to the ```require``` section of your `composer.json` file.
@@ -61,6 +61,13 @@ And add the facade
     ],
 ```
 
+### Manually loading script files
+By setting the include_scripts option in the config/.env file to false the scripts will not be included when generating the calendar.
+If you want to manually include the scripts you can call the following static function in your header/footer/etc.
+```
+    \Edofre\FullcalendarScheduler\FullcalendarScheduler::renderScriptFiles();
+```
+
 ### Example
 
 Use the following as your controller action
@@ -87,8 +94,7 @@ public function index()
     $calendar->setResources([
         ['id' => 'a', 'title' => 'Auditorium A'],
         ['id' => 'b', 'title' => 'Auditorium B', 'eventColor' => 'green'],
-
-['id' => 'c', 'title' => 'Auditorium C', 'eventColor' => 'orange'],
+		['id' => 'c', 'title' => 'Auditorium C', 'eventColor' => 'orange'],
         [
             'id'       => 'd',
             'title'    => 'Auditorium D',
