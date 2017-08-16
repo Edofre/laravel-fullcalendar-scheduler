@@ -1,6 +1,12 @@
 Change Log: `laravel-fullcalendar-scheduler`
 ============================================
 
+## Version 1.2.0
+
+**Date:** 16-Aug-2017
+
+- Added include_scripts option to configuration so user can decide to load scripts himself
+
 ## Version 1.1.1
 
 **Date:** 16-Jul-2017
