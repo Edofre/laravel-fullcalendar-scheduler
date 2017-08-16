@@ -27,6 +27,17 @@ class FullcalendarScheduler
     protected $clientOptions = [];
 
     /**
+     * Renders the view that includes the script files
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public static function renderScriptFiles()
+    {
+        return view('fullcalendar-scheduler::script', [
+            'include_gcal' => config('fullcalendar-scheduler.enable_gcal'),
+        ]);
+    }
+
+    /**
      * @return string
      */
     public function generate()
@@ -66,9 +77,10 @@ class FullcalendarScheduler
     private function script()
     {
         return view('fullcalendar-scheduler::script', [
-            'id'           => $this->getId(),
-            'options'      => $this->getOptionsJson(),
-            'include_gcal' => config('fullcalendar-scheduler.enable_gcal'),
+            'id'              => $this->getId(),
+            'options'         => $this->getOptionsJson(),
+            'include_scripts' => config('fullcalendar-scheduler.include_scripts'),
+            'include_gcal'    => config('fullcalendar-scheduler.enable_gcal'),
         ]);
     }
 
