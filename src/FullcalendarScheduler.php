@@ -32,7 +32,7 @@ class FullcalendarScheduler
      */
     public static function renderScriptFiles()
     {
-        return view('fullcalendar-scheduler::script', [
+        return view('fullcalendar-scheduler::files', [
             'include_gcal' => config('fullcalendar-scheduler.enable_gcal'),
         ]);
     }
