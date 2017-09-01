@@ -43,10 +43,10 @@
   "extra": {
     "laravel": {
       "providers": [
-        "EdoFre\\FullcalendarScheduler\\FullcalendarSchedulerServiceProvider"
+        "Edofre\\FullcalendarScheduler\\FullcalendarSchedulerServiceProvider"
       ],
       "aliases": {
-        "FullcalendarScheduler": "EdoFre\\FullcalendarScheduler\\Facades\\FullcalendarScheduler"
+        "FullcalendarScheduler": "Edofre\\FullcalendarScheduler\\Facades\\FullcalendarScheduler"
       }
     }
   }
