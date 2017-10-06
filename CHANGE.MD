@@ -1,6 +1,12 @@
 Change Log: `laravel-fullcalendar-scheduler`
 ============================================
 
+## Version 1.2.2
+
+**Date:** 6-Oct-2017
+
+- New fullcalendar scheduler version (1.7.1 )
+
 ## Version 1.2.1
 
 **Date:** 1-Sep-2017
