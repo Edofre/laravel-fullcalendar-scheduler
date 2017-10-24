@@ -39,12 +39,6 @@ You can find more info on this page: [https://packagist.org/packages/fxp/compose
 
 ## Configuration
 
-Publish assets and configuration files
-```
-php artisan vendor:publish --tag=config
-php artisan vendor:publish --tag=fullcalendar-scheduler
-```
-
 Add the ServiceProvider to your config/app.php
 ```php
 'providers' => [
@@ -59,6 +53,12 @@ And add the facade
         ...
         'Fullcalendar' => Edofre\FullcalendarScheduler\Facades\FullcalendarScheduler::class,
     ],
+```
+
+Publish assets and configuration files
+```
+php artisan vendor:publish --tag=config
+php artisan vendor:publish --tag=fullcalendar-scheduler
 ```
 
 ### Manually loading script files
