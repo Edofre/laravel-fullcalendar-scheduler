@@ -143,12 +143,12 @@ public function index()
             ],
         ],
         'resourceLabelText' => 'Rooms',
-        'eventClick' => new Edofre\FullcalendarScheduler\JsExpression("
+        'eventClick' => new \Edofre\FullcalendarScheduler\JsExpression("
                     function(event, jsEvent, view) {
                         console.log(event);
                     }
                 "),
-                'viewRender' => new Edofre\FullcalendarScheduler\JsExpression("
+                'viewRender' => new \Edofre\FullcalendarScheduler\JsExpression("
                     function( view, element ) {
                         console.log(\"View \"+view.name+\" rendered\");
                     }
