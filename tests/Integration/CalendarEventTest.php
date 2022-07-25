@@ -1,13 +1,13 @@
 <?php
 
-namespace Edofre\FullcalendarScheduler\Test\Integration;
+namespace AliMehraei\FullcalendarScheduler\Test\Integration;
 
 use Carbon\Carbon;
-use Edofre\FullcalendarScheduler\CalendarEvent;
+use AliMehraei\FullcalendarScheduler\CalendarEvent;
 
 /**
  * Class CalendarEventTest
- * @package Edofre\FullcalendarScheduler\Test\Integration
+ * @package AliMehraei\FullcalendarScheduler\Test\Integration
  */
 class CalendarEventTest extends \Orchestra\Testbench\TestCase
 {

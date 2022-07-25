@@ -1,6 +1,6 @@
 <?php
 // Generate a new fullcalendar instance
-$calendar = new \Edofre\FullcalendarScheduler\FullcalendarScheduler($view);
+$calendar = new \AliMehraei\FullcalendarScheduler\FullcalendarScheduler($view);
 
 // Set the events and resources
 $calendar->setEvents([
@@ -68,7 +68,7 @@ $calendar->setOptions([
     ],
     'resourceLabelText' => 'Rooms',
     // Add the callbacks
-    'drop'              => new Edofre\FullcalendarScheduler\JsExpression("
+    'drop'              => new AliMehraei\FullcalendarScheduler\JsExpression("
             function(date, jsEvent, ui, resourceId) {
                 console.log('drop', date.format(), resourceId);
                 // is the \"remove after drop\" checkbox checked?
@@ -78,12 +78,12 @@ $calendar->setOptions([
                 }
             }
         "),
-    'eventReceive'      => new Edofre\FullcalendarScheduler\JsExpression("
+    'eventReceive'      => new AliMehraei\FullcalendarScheduler\JsExpression("
             function(event) { // called when a proper external event is dropped
                 console.log('eventReceive', event);
             }
         "),
-    'eventDrop'         => new Edofre\FullcalendarScheduler\JsExpression("
+    'eventDrop'         => new AliMehraei\FullcalendarScheduler\JsExpression("
             function(event) { // called when an event (already on the calendar) is moved
                 console.log('eventDrop', event);
             }

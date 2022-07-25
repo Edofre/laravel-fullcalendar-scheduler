@@ -1,12 +1,12 @@
 <?php
 
-namespace Edofre\FullcalendarScheduler;
+namespace AliMehraei\FullcalendarScheduler;
 
 use Illuminate\Support\ServiceProvider;
 
 /**
  * Class FullcalendarServiceProvider
- * @package Edofre\FullcalendarScheduler
+ * @package AliMehraei\FullcalendarScheduler
  */
 class FullcalendarSchedulerServiceProvider extends ServiceProvider
 {

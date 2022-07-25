@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Carbon\Carbon;
-use Edofre\FullcalendarScheduler\CalendarEvent;
-use Edofre\FullcalendarScheduler\CalendarResource;
+use AliMehraei\FullcalendarScheduler\CalendarEvent;
+use AliMehraei\FullcalendarScheduler\CalendarResource;
 use Illuminate\Http\Request;
 
 class FullcalendarSchedulerController extends Controller

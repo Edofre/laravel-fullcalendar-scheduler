@@ -1,6 +1,6 @@
 <?php
 // Generate a new fullcalendar instance
-$calendar = new \Edofre\FullcalendarScheduler\FullcalendarScheduler($view);
+$calendar = new \AliMehraei\FullcalendarScheduler\FullcalendarScheduler($view);
 
 // Set the events and resources
 $calendar->setEvents([
@@ -36,7 +36,7 @@ $calendar->setOptions([
     'googleCalendarApiKey' => 'AIzaSyDcnW6WejpTOCffshGDDb4neIrXVUA1EAE',
 
     // Add the callbacks
-    'dayClick'             => new Edofre\FullcalendarScheduler\JsExpression("
+    'dayClick'             => new AliMehraei\FullcalendarScheduler\JsExpression("
             function (event) {
                 // opens events in a popup window
                 window.open(event.url, 'gcalevent', 'width=700,height=600');

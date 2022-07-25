@@ -1,17 +1,17 @@
 <?php
 
-namespace Edofre\FullcalendarScheduler\Test\Integration;
+namespace AliMehraei\FullcalendarScheduler\Test\Integration;
 
 /**
  * Class JsExpressionTest
- * @package Edofre\FullcalendarScheduler\Test\Integration
+ * @package AliMehraei\FullcalendarScheduler\Test\Integration
  */
 class JsExpressionTest extends \Orchestra\Testbench\TestCase
 {
     /** @test */
     public function generate_event_with_id()
     {
-        $jsExpressionTest = new \Edofre\FullcalendarScheduler\JsExpression("
+        $jsExpressionTest = new \AliMehraei\FullcalendarScheduler\JsExpression("
                 function( view, element ) {
                     console.log(\"View \"+view.name+\" rendered\");
                 }

@@ -1,6 +1,6 @@
 <?php
 // Generate a new fullcalendar instance
-$calendar = new \Edofre\FullcalendarScheduler\FullcalendarScheduler($view);
+$calendar = new \AliMehraei\FullcalendarScheduler\FullcalendarScheduler($view);
 
 // Set the events and resources
 $calendar->setEvents([
@@ -69,7 +69,7 @@ $calendar->setOptions([
     'resourceLabelText' => 'Rooms',
     // Add the callbacks
     // the point if this demo is to demonstrate dayClick...
-    'dayClick' => new Edofre\FullcalendarScheduler\JsExpression("
+    'dayClick' => new AliMehraei\FullcalendarScheduler\JsExpression("
         function(date, jsEvent, view, resourceObj) {
             console.log('dayClick', date.format(), resourceObj);
         }

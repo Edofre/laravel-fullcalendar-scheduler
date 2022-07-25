@@ -1,10 +1,10 @@
 <?php
 
-namespace Edofre\FullcalendarScheduler;
+namespace AliMehraei\FullcalendarScheduler;
 
 /**
  * Class FullcalendarScheduler
- * @package Edofre\FullcalendarScheduler
+ * @package AliMehraei\FullcalendarScheduler
  */
 class FullcalendarScheduler
 {

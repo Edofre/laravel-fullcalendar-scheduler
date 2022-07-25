@@ -1,10 +1,10 @@
 <?php
 
-namespace Edofre\FullcalendarScheduler\Test\Integration;
+namespace AliMehraei\FullcalendarScheduler\Test\Integration;
 
 /**
  * Class EventTest
- * @package Edofre\FullcalendarScheduler\Test\Integration
+ * @package AliMehraei\FullcalendarScheduler\Test\Integration
  */
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {
@@ -23,7 +23,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageProviders($app)
     {
         return [
-            \Edofre\FullcalendarScheduler\FullcalendarSchedulerServiceProvider::class,
+            \AliMehraei\FullcalendarScheduler\FullcalendarSchedulerServiceProvider::class,
         ];
     }
 
@@ -34,7 +34,7 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
     protected function getPackageAliases($app)
     {
         return [
-            'FullcalendarScheduler' => \Edofre\FullcalendarScheduler\Facades\FullcalendarScheduler::class,
+            'FullcalendarScheduler' => \AliMehraei\FullcalendarScheduler\Facades\FullcalendarScheduler::class,
         ];
     }
 }

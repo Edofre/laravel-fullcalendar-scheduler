@@ -1,6 +1,6 @@
 <?php
 // Generate a new fullcalendar instance
-$calendar = new \Edofre\FullcalendarScheduler\FullcalendarScheduler($view);
+$calendar = new \AliMehraei\FullcalendarScheduler\FullcalendarScheduler($view);
 
 // Set the events and resources
 $calendar->setEvents([

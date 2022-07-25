@@ -1,12 +1,12 @@
 <?php
 
-namespace Edofre\FullcalendarScheduler;
+namespace AliMehraei\FullcalendarScheduler;
 
 /**
  * Class JsonEncoder
  * Modified from
  * https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseJson.php
- * @package Edofre\FullcalendarScheduler
+ * @package AliMehraei\FullcalendarScheduler
  */
 class JsonEncoder
 {

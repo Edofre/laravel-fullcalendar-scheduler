@@ -1,6 +1,6 @@
 <?php
 // Generate a new fullcalendar instance
-$calendar = new \Edofre\FullcalendarScheduler\FullcalendarScheduler($view);
+$calendar = new \AliMehraei\FullcalendarScheduler\FullcalendarScheduler($view);
 
 // Set the events and resources
 //        $calendar->setEvents(route('fullcalendar-scheduler-ajax-events'));
@@ -65,12 +65,12 @@ $calendar->setOptions([
     ],
     'resourceLabelText' => 'Rooms',
     // Add the callbacks
-    'eventClick'        => new Edofre\FullcalendarScheduler\JsExpression("
+    'eventClick'        => new AliMehraei\FullcalendarScheduler\JsExpression("
             function(event, jsEvent, view) {
                 console.log(event);
             }
         "),
-    'viewRender'        => new Edofre\FullcalendarScheduler\JsExpression("
+    'viewRender'        => new AliMehraei\FullcalendarScheduler\JsExpression("
             function( view, element ) {
                 console.log(\"View \"+view.name+\" rendered\");
             }

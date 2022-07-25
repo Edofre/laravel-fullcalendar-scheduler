@@ -1,6 +1,6 @@
 <?php
 // Generate a new fullcalendar instance
-$calendar = new \Edofre\FullcalendarScheduler\FullcalendarScheduler($view);
+$calendar = new \AliMehraei\FullcalendarScheduler\FullcalendarScheduler($view);
 
 // Set the events and resources
 $calendar->setEvents([
@@ -71,7 +71,7 @@ $calendar->setOptions([
     'customButtons'     => [
         'promptResource' => [
             'text'  => '+ room',
-            'click' => new Edofre\FullcalendarScheduler\JsExpression("
+            'click' => new AliMehraei\FullcalendarScheduler\JsExpression("
                     function() {
                         var title = prompt('Room name');
                         if (title) {
@@ -84,7 +84,7 @@ $calendar->setOptions([
                 "),
         ],
     ],
-    'resourceRender'    => new Edofre\FullcalendarScheduler\JsExpression("
+    'resourceRender'    => new AliMehraei\FullcalendarScheduler\JsExpression("
                 function(resource, cellEls) {
                     cellEls.on('click', function() {
                         if (confirm('Are you sure you want to delete ' + resource.title + '?')) {

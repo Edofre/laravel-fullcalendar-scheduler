@@ -1,11 +1,11 @@
 <?php
 
-namespace Edofre\FullcalendarScheduler;
+namespace AliMehraei\FullcalendarScheduler;
 
 /**
  * Class CalendarResource
  * Name should not be resource because php7 will not allow it
- * @package Edofre\FullcalendarScheduler
+ * @package AliMehraei\FullcalendarScheduler
  */
 class CalendarResource
 {

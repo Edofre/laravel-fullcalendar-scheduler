@@ -1,10 +1,10 @@
 <?php
 
-namespace Edofre\FullcalendarScheduler\Test\Integration;
+namespace AliMehraei\FullcalendarScheduler\Test\Integration;
 
 /**
  * Class FullcalendarScheduler
- * @package Edofre\FullcalendarScheduler\Test\Integration
+ * @package AliMehraei\FullcalendarScheduler\Test\Integration
  */
 class FullcalendarSchedulerTest extends TestCase
 {
@@ -13,7 +13,7 @@ class FullcalendarSchedulerTest extends TestCase
     public function generate_event_with_id()
     {
         // Generate a new fullcalendar instance
-        $scheduler = new \Edofre\FullcalendarScheduler\FullcalendarScheduler();
+        $scheduler = new \AliMehraei\FullcalendarScheduler\FullcalendarScheduler();
 
         // Set options
         $scheduler->setOptions([

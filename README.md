@@ -5,7 +5,7 @@
 [![Latest Unstable Version](https://poser.pugx.org/edofre/laravel-fullcalendar-scheduler/v/unstable)](https://packagist.org/packages/edofre/laravel-fullcalendar-scheduler)
 [![License](https://poser.pugx.org/edofre/laravel-fullcalendar-scheduler/license)](https://packagist.org/packages/edofre/laravel-fullcalendar-scheduler)
 [![composer.lock](https://poser.pugx.org/edofre/laravel-fullcalendar-scheduler/composerlock)](https://packagist.org/packages/edofre/laravel-fullcalendar-scheduler)
-[![Build Status](https://travis-ci.org/Edofre/laravel-fullcalendar-scheduler.svg?branch=master)](https://travis-ci.org/Edofre/laravel-fullcalendar-scheduler)
+[![Build Status](https://travis-ci.org/AliMehraei/laravel-fullcalendar-scheduler.svg?branch=master)](https://travis-ci.org/AliMehraei/laravel-fullcalendar-scheduler)
 
 ## Installation
 
@@ -43,7 +43,7 @@ Add the ServiceProvider to your config/app.php
 ```php
 'providers' => [
         ...
-        Edofre\FullcalendarScheduler\FullcalendarSchedulerServiceProvider::class,
+        AliMehraei\FullcalendarScheduler\FullcalendarSchedulerServiceProvider::class,
     ],
 ```
 
@@ -51,7 +51,7 @@ And add the facade
 ```php
 'aliases' => [
         ...
-        'Fullcalendar' => Edofre\FullcalendarScheduler\Facades\FullcalendarScheduler::class,
+        'Fullcalendar' => AliMehraei\FullcalendarScheduler\Facades\FullcalendarScheduler::class,
     ],
 ```
 
@@ -65,7 +65,7 @@ php artisan vendor:publish --tag=fullcalendar-scheduler
 By setting the include_scripts option in the config/.env file to false the scripts will not be included when generating the calendar.
 If you want to manually include the scripts you can call the following static function in your header/footer/etc.
 ```
-    \Edofre\FullcalendarScheduler\FullcalendarScheduler::renderScriptFiles();
+    \AliMehraei\FullcalendarScheduler\FullcalendarScheduler::renderScriptFiles();
 ```
 
 ### Example
@@ -78,7 +78,7 @@ Use the following as your controller action
 public function index()
 {
     // Generate a new fullcalendar instance
-    $calendar = new \Edofre\FullcalendarScheduler\FullcalendarScheduler();
+    $calendar = new \AliMehraei\FullcalendarScheduler\FullcalendarScheduler();
 
     // Set events and resources, commented lines shows how to add them via ajax
     // $calendar->setEvents(route('fullcalendar-scheduler-ajax-events'));
@@ -143,12 +143,12 @@ public function index()
             ],
         ],
         'resourceLabelText' => 'Rooms',
-        'eventClick' => new \Edofre\FullcalendarScheduler\JsExpression("
+        'eventClick' => new \AliMehraei\FullcalendarScheduler\JsExpression("
                     function(event, jsEvent, view) {
                         console.log(event);
                     }
                 "),
-                'viewRender' => new \Edofre\FullcalendarScheduler\JsExpression("
+                'viewRender' => new \AliMehraei\FullcalendarScheduler\JsExpression("
                     function( view, element ) {
                         console.log(\"View \"+view.name+\" rendered\");
                     }

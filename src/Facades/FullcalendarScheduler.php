@@ -1,12 +1,12 @@
 <?php
 
-namespace Edofre\FullcalendarScheduler\Facades;
+namespace AliMehraei\FullcalendarScheduler\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class FullcalendarScheduler
- * @package Edofre\FullcalendarScheduler\Facades
+ * @package AliMehraei\FullcalendarScheduler\Facades
  */
 class FullcalendarScheduler extends Facade
 {

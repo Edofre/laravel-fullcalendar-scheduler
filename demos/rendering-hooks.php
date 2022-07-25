@@ -1,6 +1,6 @@
 <?php
 // Generate a new fullcalendar instance
-$calendar = new \Edofre\FullcalendarScheduler\FullcalendarScheduler($view);
+$calendar = new \AliMehraei\FullcalendarScheduler\FullcalendarScheduler($view);
 
 // Set the events and resources
 $calendar->setEvents([
@@ -60,12 +60,12 @@ $calendar->setOptions([
     ],
     'resourceLabelText' => 'Rooms',
     // Add the callbacks
-    'resourceText'      => new Edofre\FullcalendarScheduler\JsExpression("
+    'resourceText'      => new AliMehraei\FullcalendarScheduler\JsExpression("
         function(resource) {
             return 'Auditorium ' + ('' + resource.id).toUpperCase();
         }
     "),
-    'resourceRender'    => new Edofre\FullcalendarScheduler\JsExpression("
+    'resourceRender'    => new AliMehraei\FullcalendarScheduler\JsExpression("
         function(resource, leftCells, rightCells) {
             if (resource.id == 'h') {
                 leftCells.css('background-color', 'rgb(255, 243, 206)');

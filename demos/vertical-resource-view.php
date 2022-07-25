@@ -1,6 +1,6 @@
 <?php
 // Generate a new fullcalendar instance
-$calendar = new \Edofre\FullcalendarScheduler\FullcalendarScheduler($view);
+$calendar = new \AliMehraei\FullcalendarScheduler\FullcalendarScheduler($view);
 
 // Set the events and resources
 $calendar->setEvents([
@@ -44,7 +44,7 @@ $calendar->setOptions([
     // uncomment this line to hide the all-day slot
     //'allDaySlot'=>false,
     // Add the callbacks
-    'select'      => new Edofre\FullcalendarScheduler\JsExpression("
+    'select'      => new AliMehraei\FullcalendarScheduler\JsExpression("
             function(start, end, jsEvent, view, resource) {
                 console.log(
                     'select',
@@ -54,7 +54,7 @@ $calendar->setOptions([
                 );
             }
         "),
-    'dayClick'    => new Edofre\FullcalendarScheduler\JsExpression("
+    'dayClick'    => new AliMehraei\FullcalendarScheduler\JsExpression("
             function(date, jsEvent, view, resource) {
                 console.log(
                     'dayClick',
